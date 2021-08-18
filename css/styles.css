@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); /*Roboto font family*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#login {
+  background: linear-gradient(to bottom right, #4dc7fc, #af82f8, #ac7ff4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.main-div {
+  background: #ffffff;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 2rem;
+  width: 80%;
+}
+
+.img-div {
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+}
+
+.left-img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.form-div {
+  margin-left: 2rem;
+  width: 40%;
+}
+
+.text-header {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+form input {
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #eaf4ff;
+  height: 2.5rem;
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  width: 90%;
+}
+
+form input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #0075ff;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0.6rem 3rem;
+}
+
+button:hover {
+  background: #298dff;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.online-text-div {
+  margin: 2rem 0;
+  position: relative;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d3d3d3;
+}
+
+.online-text {
+  background-color: #ffffff;
+  color: #d3d3d3;
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  margin: 0;
+  padding: 0 2rem;
+  transform: translate(-50%); /*to center the sentence in the middle*/
+}
+
+.icon-div {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-div img {
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.account p {
+  margin: 0;
+}
+
+.account a {
+  text-decoration: none;
+}
+
+@media (max-width: 1470px) {
+  .img-div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1290px) {
+  .main-div {
+    width: 98%;
+  }
+  .img-div {
+    width: 70%;
+  }
+  .form-div {
+    width: 30%;
+  }
+  .online-text {
+    font-size: 0.6rem;
+    top: -5px;
+  }
+}
+
+@media (max-width: 985px) {
+  .account p,
+  .account a {
+    font-size: 0.8rem;
+  }
+  .online-text {
+    font-size: 0.3rem;
+    top: -4px;
+  }
+}
+
+@media (max-width: 765px) {
+  .main-div {
+    width: 90%;
+  }
+  .img-div {
+    display: none;
+  }
+  .form-div {
+    width: 100%;
+    margin-left: 0;
+  }
+}
